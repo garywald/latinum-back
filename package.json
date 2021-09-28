@@ -1,0 +1,17 @@
+{
+  "name": "devops",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:garywald/devops.git",
+  "author": "Geraud <geraud.masson@ext.adeo.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
