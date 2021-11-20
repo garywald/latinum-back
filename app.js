@@ -1,7 +1,5 @@
 const express = require('express');
 
-const PORT = 2021
-
 const app = express();
 
 app.get('/', function(req, res) {
