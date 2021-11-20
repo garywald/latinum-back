@@ -6,7 +6,8 @@
   "author": "Geraud <geraud.masson@ext.adeo.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon app.js",
+    "dev": "nodemon app.js",
+    "start": "node app.js",
     "commit": "git cz"
   },
   "dependencies": {
