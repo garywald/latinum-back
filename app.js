@@ -1,13 +1,27 @@
 const express = require('express');
-
-const PORT = 2021
+const LoremIpsum = require("lorem-ipsum").LoremIpsum;
 
 const app = express();
 
+const lorem = new LoremIpsum({
+    sentencesPerParagraph: {
+      max: 8,
+      min: 4
+    },
+    wordsPerSentence: {
+      max: 16,
+      min: 4
+    }
+  });
+
 app.get('/', function(req, res) {
-    res.send("hello world")
+    res.send("lorem Ipsum");
 })
 
-app.listen(PORT, ()=> { 
-    console.log(`App listening on http://localhost:${PORT}`)
+app.get('/lorem', function(req, res) {
+    res.send(lorem.generateParagraphs(7))
+})
+
+app.listen(process.env.PORT, ()=> { 
+    console.log(`App listening on http://localhost:${process.env.PORT}`)
 })
