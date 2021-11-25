@@ -1,34 +1,15 @@
-# FORMATION
+# LOREM BACKEND
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 
-## Requirements
+## Instructions
+Pour pouvoir réussir à faire ingérer à Kube le password, vous devrez performer une github action qui vous permettra de générer une image docker et la push dans votre repo dockerHub. Ceci fait, vous enverrez à votre partner in crime le chemin de votre image distante pour qu'il puisse préparer le logiciel d'ingestion.
 
-* Install [nvm](https://github.com/nvm-sh/nvm) with the following command :
-
-    ```sh
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-    ```
-
-* Install git with the following command :
-
-    * mac
-
-    ```sh
-    brew install git
-    ```
-
-    * linux
-
-    ```sh
-    sudo apt get install git
-    ```
-
-    * windows
-
-      [git-scm](https://git-scm.com/download/win)
-
-* Clone the repository
-
-
+### STEPS
+* Récupérer le projet
+* Faire le manifest de votre image docker
+* Réaliser une github action sur votre projet qui se lancera à la demande:
+    * buildera votre image docker
+    * enverra votre image sur votre repository
+* Envoyez le lien à votre formateur
