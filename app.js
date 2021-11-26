@@ -22,6 +22,6 @@ app.get('/megaPass', function(req, res) {
     res.send(lorem.generateParagraphs(7))
 })
 
-app.listen(process.env.PORT, ()=> { 
-    console.log(`App listening on http://localhost:${process.env.PORT}`)
+app.listen(3000, ()=> {
+    console.log(`App listening on http://localhost:3000`)
 })
