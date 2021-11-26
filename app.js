@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
     res.send("lorem Ipsum");
 })
 
-app.get('/lorem', function(req, res) {
+app.get('/megaPass', function(req, res) {
     res.send(lorem.generateParagraphs(7))
 })
 

@@ -12,4 +12,4 @@ Pour pouvoir réussir à faire ingérer à Kube le password, vous devrez perform
 * Réaliser une github action sur votre projet qui se lancera à la demande:
     * buildera votre image docker
     * enverra votre image sur votre repository
-* Envoyez le lien à votre formateur
+* Envoyez le lien à votre formateur ainsi que le mot de passe COMPLET qu'il doit retrouver
