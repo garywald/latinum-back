@@ -1,0 +1,18 @@
+name: GitHub Actions
+on: [push]
+jobs:
+  push_to_dockerhub:
+    name: Push Docker image to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Log in to Docker Hub
+        env:
+          DOCKER_USER: ${{secrets.DOCKER_USERNAME}}
+          DOCKER_PASSWORD: ${{secrets.DOCKER_TOKEN}}
+        run:
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+      - name: Build the docker image
+        run : docker build -t ${{secrets.DOCKER_USERNAME}}/eval .
+      - name : docker push
+        run: docker push ${{secrets.DOCKER_USERNAME}}/eval
