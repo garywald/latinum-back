@@ -8,7 +8,7 @@ Pour pouvoir réussir à faire ingérer à Kube le password, vous devrez perform
 
 ### STEPS
 * Récupérer le projet
-* Faire le manifest de votre image docker
+* Faire le manifest de votre image docker et optimisez là pour qu'elle soit la plus fine possible.
 * Réaliser une github action sur votre projet qui se lancera à la demande:
     * buildera votre image docker
     * enverra votre image sur votre repository
